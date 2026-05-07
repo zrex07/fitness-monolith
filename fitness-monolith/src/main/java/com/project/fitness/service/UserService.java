@@ -29,22 +29,6 @@ public class UserService {
                 .lastName(request.getLastName())
                 .build();
 
-//        User user = new User(
-//                null,
-//                request.getEmail(),
-//                request.getPassword(),
-//                request.getFirstName(),
-//                request.getLastName(),
-//                Instant.parse("2025-12-08T14:49:41.208Z")
-//                        .atZone(ZoneOffset.UTC)
-//                        .toLocalDateTime(),
-//                Instant.parse("2025-12-08T14:49:41.208Z")
-//                        .atZone(ZoneOffset.UTC)
-//                        .toLocalDateTime(),
-//                List.of(),
-//                List.of()
-//        );
-
         User savedUser = userRepository.save(user);
 
         return mapToResponse(savedUser);

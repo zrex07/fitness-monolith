@@ -3,7 +3,6 @@ package com.project.fitness.controller;
 
 import com.project.fitness.dto.RecommendationRequest;
 import com.project.fitness.dto.RecommendationResponse;
-import com.project.fitness.model.Recommendation;
 import com.project.fitness.service.RecommendationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
